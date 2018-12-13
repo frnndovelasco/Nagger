@@ -1,24 +1,33 @@
-# This is a template for a Python scraper on morph.io (https://morph.io)
-# including some code snippets below that you should find helpful
+###############################################################################
+# START HERE: Tutorial 1: Getting used to the ScraperWiki editing interface.
+# Follow the actions listed with -- BLOCK CAPITALS below.
+###############################################################################
 
-# import scraperwiki
-# import lxml.html
-#
-# # Read in a page
-# html = scraperwiki.scrape("http://foo.com")
-#
-# # Find something on the page using css selectors
-# root = lxml.html.fromstring(html)
-# root.cssselect("div[align='left']")
-#
-# # Write out to the sqlite database using scraperwiki library
-# scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
-#
-# # An arbitrary query against the database
-# scraperwiki.sql.select("* from data where 'name'='peter'")
+# -----------------------------------------------------------------------------
+# 1. Start by running a really simple Python script, just to make sure that 
+# everything is working OK.
+# -- CLICK THE 'RUN' BUTTON BELOW
+# You should see some numbers print in the 'Console' tab below. If it doesn't work, 
+# try reopening this page in a different browser - Chrome or the latest Firefox.
+# -----------------------------------------------------------------------------
 
-# You don't have to do things with the ScraperWiki and lxml libraries.
-# You can use whatever libraries you want: https://morph.io/documentation/python
-# All that matters is that your final data is written to an SQLite database
-# called "data.sqlite" in the current working directory which has at least a table
-# called "data".
+for i in range(10):
+    print "Hello", i
+
+# -----------------------------------------------------------------------------
+# 2. Next, try scraping an actual web page and getting some raw HTML.
+# -- UNCOMMENT THE THREE LINES BELOW (i.e. delete the # at the start of the lines)
+# -- CLICK THE 'RUN' BUTTON AGAIN 
+# You should see the raw HTML at the bottom of the 'Console' tab. 
+# Click on the 'more' link to see it all, and the 'Sources' tab to see our URL - 
+# you can click on the URL to see the original page. 
+# -----------------------------------------------------------------------------
+
+import scraperwiki
+html = scraperwiki.scrape('https://scraperwiki.com/hello_world.html')
+print html
+
+# -----------------------------------------------------------------------------
+# In the next tutorial, you'll learn how to extract the useful parts
+# from the raw HTML page.
+# -----------------------------------------------------------------------------
