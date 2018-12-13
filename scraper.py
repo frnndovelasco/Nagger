@@ -24,11 +24,13 @@ for i in range(10):
 # -----------------------------------------------------------------------------
 
 import scraperwiki
-html = scraperwiki.scrape('https://bbc.co.uk')
-sausages = html
-print sausages
+html = scraperwiki.scrape('https://www.infomex.org.mx/gobiernofederal/home.action')
+
 print html
 
+nigger = scraperwiki.scrape('https://www.jalisco.gob.mx/')
+
+print nigger
 # -----------------------------------------------------------------------------
 # In the next tutorial, you'll learn how to extract the useful parts
 # from the raw HTML page.
