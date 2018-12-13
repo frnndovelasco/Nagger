@@ -25,6 +25,8 @@ for i in range(10):
 
 import scraperwiki
 html = scraperwiki.scrape('https://bbc.co.uk')
+sausages = html
+print sausages
 print html
 
 # -----------------------------------------------------------------------------
