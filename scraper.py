@@ -28,9 +28,13 @@ html = scraperwiki.scrape('https://www.infomex.org.mx/gobiernofederal/home.actio
 
 print html
 
-nigger = scraperwiki.scrape('https://www.jalisco.gob.mx/')
+bocina = scraperwiki.scrape('https://www.jalisco.gob.mx/')
 
-print nigger
+print bocina
+
+alv = [html,bocina]
+alv.pop(1)
+
 # -----------------------------------------------------------------------------
 # In the next tutorial, you'll learn how to extract the useful parts
 # from the raw HTML page.
